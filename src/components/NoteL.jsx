@@ -44,7 +44,7 @@ function NoteL({ addNote }) {
         />
         <input
           type='text'
-          placeholder='Enter note'
+          placeholder='Enter your note'
           className='field'
           value={content}
           onChange={(e) => setContent(e.target.value)}
