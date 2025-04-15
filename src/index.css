@@ -64,3 +64,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+
+  body {
+    font-size: 18px;
+  }
+}
+
+/* For desktops */
+@media only screen and (min-width: 993px) {
+ 
+  body {
+    font-size: 20px;
+  }
+}
