@@ -65,40 +65,187 @@ button:focus-visible {
   }
 }
 
-/* For mobile devices */
-@media only screen and (max-width: 600px) {
-
+/* Mobile devices (portrait phones, less than 600px) */
+@media (max-width: 599px) {
   body {
-    font-size: 16px;
+    padding: 1.5rem 1rem;
+  }
 
+  .Todolist {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+    padding: 0;
+  }
 
-    nav{
-      width: 100%;
-      flex-direction: column;
-      padding-right: 20px;
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem 1.75rem;
+    border-radius: 12px;
+  }
 
-    }
-    nav ul li {
-      display: inline;
-      margin-right: 0px;
-      margin-left: 2px;
-      background-color: rgb(53, 56, 87);
+  .head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .img1 {
+    margin: 0;
+  }
+
+  .sub h2 {
+    font-size: 1.6rem;
+  }
+
+  .sub .s {
+    font-size: 0.85rem;
+  }
+
+  .field {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .send {
+    font-size: 1rem;
+    padding: 0.75rem 0;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  li {
+    font-size: 0.95rem;
+    padding: 0.85rem 1rem;
+  }
+
+  li button {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
-/* For tablets */
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-
+/* Tablets (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
   body {
-    font-size: 10spx;
+    padding: 2rem 2rem;
+  }
+
+  .Todolist {
+    gap: 2rem;
+    max-width: 90%;
+  }
+
+  .container {
+    width: 45%;
+    max-width: 45%;
+    padding: 2rem 2rem;
+  }
+
+  .head {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .sub h2 {
+    font-size: 1.75rem;
+  }
+
+  .sub .s {
+    font-size: 0.9rem;
+  }
+
+  .field {
+    font-size: 1rem;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .send {
+    font-size: 1.05rem;
+    padding: 0.85rem 0;
+  }
+
+  ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+    align-items:center;
+    justify-content:center;
+  }
+
+  li button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  nav{
+    font-size: 30px;
   }
 }
 
-/* For desktops */
-@media only screen and (min-width: 993px) {
- 
+/* Small desktops and larger (900px and up) */
+@media (min-width: 900px) {
   body {
-    font-size: 20px;
+    padding: 3rem 3rem;
   }
-}
+
+  .Todolist {
+    gap: 2.5rem;
+    max-width: 1200px;
+  }
+
+  .container {
+    width: 320px;
+    max-width: 320px;
+    padding: 2rem 2.5rem;
+  }
+
+  .head {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .sub h2 {
+    font-size: 1.8rem;
+  }
+
+  .sub .s {
+    font-size: 0.9rem;
+  }
+
+  .field {
+    font-size: 1rem;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .send {
+    font-size: 1.1rem;
+    padding: 0.85rem 0;
+  }
+
+  ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+    padding: 2px;
+  }
+
+  li button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
 }
