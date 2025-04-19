@@ -8,7 +8,7 @@ function NoteList({ notes,del }) {
       {notes.map((note) => (
         <div key={note.id} className='note-item'>
           <h3 className='note-h3'><u>{note.text}</u></h3>
-          <p>{note.content}</p>
+          <p className='note-content'>{note.content}</p>
           <button onClick={()=>del(note.id)} className='del-button'>delete</button>
         </div>
       ))}

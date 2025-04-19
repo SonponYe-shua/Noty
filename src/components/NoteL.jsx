@@ -29,9 +29,9 @@ function NoteL({ addNote }) {
     <div className='Todolist'>
       <div className='container'>
         <div className='head'>
-          <img src={img} className='img1' alt="logo" />
+        { /* <img src={img} className='img1' alt="logo" />*/} 
           <div className='sub'>
-            <h2>NOTY</h2>
+            <h2 className='n'>NOTY</h2>
             <p className='s'>note every moment..</p>
           </div>
         </div>
